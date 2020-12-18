@@ -44,8 +44,8 @@ fun triangle(a: Int, h: Int){
 fun triangle(a: Int){
     for(j in a downTo 1) {
 
-        //for() - tutaj trzeba dodać odpowiednią ilość spacji
-        print("  ")
+        for(k in 1..a/2)
+            print("  ")
 
         for (i in 1..a-j) {
             print("*")
