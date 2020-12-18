@@ -5,7 +5,8 @@ fun main(){
     rectangle(5,5)
     println()*/
 
-    triangle(10,5)
+    //triangle(10,5)
+    triangle(10)
 }
 
 fun rectangle(rows: Int,columns: Int){
@@ -21,6 +22,8 @@ fun rectangle(rows: Int,columns: Int){
 }
 
 fun triangle(a: Int, h: Int){
+    val myStep = 2
+
     for(j in 1..a) {
         for (i in 1..a-j) {
             print("*")
@@ -39,5 +42,15 @@ fun triangle(a: Int, h: Int){
 }
 
 fun triangle(a: Int){
+    for(j in a downTo 1) {
 
+        //for() - tutaj trzeba dodać odpowiednią ilość spacji
+        print("  ")
+
+        for (i in 1..a-j) {
+            print("*")
+        }
+
+        println()
+    }
 }
