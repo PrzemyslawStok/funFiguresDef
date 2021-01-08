@@ -6,7 +6,9 @@ fun main(){
     println()*/
 
     //triangle(10,5)
-    triangle(10)
+
+    for(i in 1..5)
+        triangle(5+i)
 }
 
 fun rectangle(rows: Int,columns: Int){
@@ -44,16 +46,16 @@ fun triangle(a: Int, h: Int){
 fun triangle(a: Int){
     for(j in a-1 downTo 1) {
 
-        print("${j/2}, ")
-        print(a/2)
-
-        for(k in a/2 downTo 0)
+        for(k in j+a downTo 0)
             print(" ")
 
         for (i in 1..a-j) {
             print("*")
         }
-        print("${a-j}")
+
+        for (i in 1..a-j) {
+            print("*")
+        }
 
         println()
     }
