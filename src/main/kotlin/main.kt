@@ -43,12 +43,12 @@ fun triangle(a: Int, h: Int){
 
 fun triangle(a: Int){
     for(j in a-1 downTo 1) {
-        //print("a-j = ${a}-${j}")
+
+        print("${j/2}, ")
+        print(a/2)
 
         for(k in a/2 downTo 0)
-            print("  ")
-
-        print(a/2)
+            print(" ")
 
         for (i in 1..a-j) {
             print("*")
